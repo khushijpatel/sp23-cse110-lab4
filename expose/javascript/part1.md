@@ -1,0 +1,8 @@
+# Part 1 answers
+
+1. Line 9 prints result as 20 because in line 7 `result = num1 + num2;` where num1 = 10 and num2 = 10 so result equals 20 which is part of the same if condition.
+2. Line 13 prints 20 because the variable result is var so it is accessible outside the if condition and into line 20 so the value for result stays updated to 20. Var is function-scoped or global-scoped so the result remains as 20 once updated.
+3. Line 9 prints result as 20 because in line 7 `result = num1 + num2;` where num1 = 10 and num2 = 10 so result equals 20 which is part of the same if condition. At this portion result is defined since it's within the same block (inside the same set of inner curly braces {}) on line 5 and updated on line 7 to 20.
+4. Line 13 gives a reference error because in this line the variable result is not defined. result was defined in line 5 with let which makes it local scope and inaccessible/undefined in line 13.
+5. Line 9 throws an error because result is type const on line 5 which means it cannot be reassigned. Line 7 attempts to reassign result but since it's type const it throws an error.
+6. Line 13 is not reached if line 7 is not commented out since line 7 will throw an error and the program does not run fully due the reason in question 5 above. If line 7 was commented out, line 13 will throw an error sicne const behaves like let which means it cannot be accessed outside the if condition block.

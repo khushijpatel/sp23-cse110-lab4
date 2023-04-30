@@ -1,0 +1,2 @@
+1. The issue was the sum was a result of string concatenation of two strings instead of math addition of two numbers.
+2. To fix it, num1 and num2 need to be type cast into int or numbers instead of strings.
